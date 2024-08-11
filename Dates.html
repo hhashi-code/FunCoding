@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Khobar</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: rgba(187, 113, 34, 0.739);
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid;
+        line-height: 55px;
+        border-radius: 10px;
+        border-color: rgba(139, 89, 89, 0.544);
+        padding: 20px, 100px;
+        color: #593b3b;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 5px;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        line-height: 25px;
+        margin: auto;
+      }
+
+      button {
+        display: block;
+        text-align: center;
+        background-color: #f3ca8de5;
+        color: rgb(15, 14, 12);
+        border-radius: 15px;
+        border-color: rgb(46, 47, 31);
+        padding: 10px 25px;
+        cursor: pointer;
+        margin: auto;
+        box-shadow: 1px 3px 4px 1px rgba(1, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      .buy-button {
+        font-size: 20px;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px 30px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .learn-more {
+        display: block;
+        color: rgb(171, 100, 33);
+        margin-top: 20px;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: underline;
+      }
+      body {
+        background-color: ;
+        background-image: linear-gradient(to top, #f59f3d, #f1f1ddaf);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My move to Khobar, KSA 🌴</h1>
+      <h2>You will find outdoor activities including some famous resturents</h2>
+      <hr />
+      <br />
+      <img
+        src="https://zamzam-blog.s3.eu-west-1.amazonaws.com/wp-content/uploads/2022/08/Places-To-Visit-In-Al-Khobar-840x450.jpg"
+        alt="Khobar"
+      />
+
+      <br />
+      <hr />
+
+      <br />
+      <p>
+        Khobar is a coastal city located in Eastern Province that overlooks the
+        Persian Gulf. Due to its industrial development and access to beautiful
+        beaches, there are numerous things to do in Al Khobar. The activities
+        include visiting brilliant seashores, attractive parks, gorgeous
+        skyscrapers, entertainment centers, and museums. The most appealing
+        tourist destination in the city is Al Khobar Corniche, a long road
+        parallel to the coastline. Visitors can explore the Corniche Mosque and
+        Al Khobar Water Tower among the most popular attractions in the city.
+        <br />
+      </p>
+      <a
+        href="https://zamzam.com/blog/things-to-do-in-al-khobar/"
+        target=""
+        class="learn-more"
+      >
+        Find out more from google
+      </a>
+      <br />
+
+      <button class="buy-button">
+        👉🏾 Explore more things-to-do-in-al-khobar
+      </button>
+      <p class="footer">This page was coded by Halima</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("what is your name?");
+        let email = prompt("what is your email?");
+        let emoji = prompt("what is  your favourite emoji?");
+
+        alert(
+          "Thank you " +
+            name +
+            " ! We'll be in touch by email, meanwhile have alot of Saudi dates! " +
+            emoji
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
